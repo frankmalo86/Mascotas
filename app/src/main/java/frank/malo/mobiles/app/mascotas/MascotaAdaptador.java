@@ -25,12 +25,14 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         this.activity = activity;
     }
 
+    //el holder
     @Override
     public MascotaAdaptador.MascotaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_cardview_mascotas, parent, false);
         return new MascotaViewHolder(v);
     }
 
+    //el bind
     @Override
     public void onBindViewHolder(final MascotaAdaptador.MascotaViewHolder mascotaViewHolder, int position) {
 
@@ -54,6 +56,7 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Masc
         }
     }
 
+    //el count
     @Override
     public int getItemCount() {
         return mascotas.size();

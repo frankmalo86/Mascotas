@@ -30,6 +30,7 @@ public class MascotasDummy extends AppCompatActivity {
         int tamanio = getResources().getTextArray(R.array.pmascotas).length;
         mascotasSeleccionadas = new ArrayList<Mascota>();
         for (int i=0; i<tamanio; i++){
+            //obtengo el objeto serializado
             mascotasSeleccionadas.add((Mascota) getIntent().getSerializableExtra(getResources().getTextArray(R.array.pmascotas)[i].toString()));
         }
 

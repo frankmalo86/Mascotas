@@ -5,6 +5,7 @@ import java.io.Serializable;
 /**
  * Created by Frank on 14/09/2016.
  */
+//serializo el objeto para mandarlo completo a la siguiente actividad
 public class Mascota implements Serializable{
     private String nombre;
     private int foto;
